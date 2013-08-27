@@ -12,13 +12,14 @@
                 android:layout_height="wrap_content"
                 android:hint="Name"
                 android:id="@+id/editText"
-                android:layout_alignLeft="@+id/editText1" android:layout_alignParentTop="true"
+                android:maxLines="1"
+                android:layout_alignLeft="@+id/nameTextField" android:layout_alignParentTop="true"
                 android:layout_marginTop="20dp" android:layout_alignRight="@+id/editText1"/>
         <EditText
                 android:layout_width="200dp"
                 android:layout_height="wrap_content"
                 android:hint="Telephone"
-                android:id="@+id/editText1"
+                android:id="@+id/phoneTextField"
                 android:layout_centerHorizontal="true" android:layout_alignParentTop="true"
                 android:layout_marginTop="83dp" android:numeric="integer" android:layout_alignParentLeft="true"
                 android:layout_marginLeft="53dp"/>
@@ -26,7 +27,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="BAN!!!"
-                android:id="@+id/toggleButton"
+                android:id="@+id/banButton"
                 android:layout_alignParentTop="true"
                 android:layout_marginTop="208dp" android:layout_centerHorizontal="true" android:checked="false"
                 android:layout_alignRight="@+id/editText" android:layout_alignLeft="@+id/editText"/>

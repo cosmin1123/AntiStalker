@@ -1,8 +1,10 @@
 package com.example.antistalker;
 
 import java.lang.reflect.Method;
+import java.util.ArrayList;
 
-import com.android.internal.*;
+import android.os.Bundle;
+import com.android.internal.telephony.ITelephony;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;
@@ -16,9 +18,18 @@ public class CallBlocker extends BroadcastReceiver {
     private static final String TAG = "Phone call";
     private ITelephony telephonyService;
 
+    ArrayList<Person> bannedPersons;
+
     @Override
     public void onReceive(Context context, Intent intent) {
-        Log.v(TAG, "Receving....");
+        Bundle bundle = intent.getExtras();
+        String phoneNr = bundle.getString("incoming_number");
+
+        Log.v(TAG, "Receving from " + phoneNr);
+
+        if(!isBanned(phoneNr))
+            return;
+
         TelephonyManager telephony = (TelephonyManager)
                 context.getSystemService(Context.TELEPHONY_SERVICE);
         try {
@@ -32,6 +43,25 @@ public class CallBlocker extends BroadcastReceiver {
             e.printStackTrace();
         }
 
+    }
+
+
+
+    public void block(ArrayList<Person> bannedPersons) {
+        this.bannedPersons = bannedPersons;
+    }
+
+    public Boolean isBanned(String telephone){
+        Log.v(TAG, "Receving from " + bannedPersons);
+
+        if("0751122566".compareTo(telephone) == 0)
+            return  true;
+
+        for(Person p : this.bannedPersons){
+            if(p.telephone.compareTo(telephone) == 0)
+                return  true;
+        }
+        return  false;
     }
 
 
