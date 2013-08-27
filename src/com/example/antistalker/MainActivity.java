@@ -3,6 +3,7 @@ package com.example.antistalker;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -13,6 +14,7 @@ import java.util.ArrayList;
 public class MainActivity extends Activity {
 
     private ArrayList<Person> blockedPersons;
+    private CallBlocker callBlocker = new CallBlocker();
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -33,11 +35,14 @@ public class MainActivity extends Activity {
                 String name = nameTextField.getText().toString();
                 String phoneNumber = phoneTextField.getText().toString();
 
+                if (name == null || phoneNumber == null)
+                    return;
+
                 Person blocked = new Person(name, phoneNumber);
                 blockedPersons.add(blocked);
 
-                new CallBlocker().block(blockedPersons);
-                SmsBlocker.block(blockedPersons);
+                callBlocker.block(blockedPersons);
+               // SmsBlocker.block(blockedPersons);
                 TwitterBlocker.block(blocked);
             }
         });
@@ -48,7 +53,9 @@ public class MainActivity extends Activity {
 
             @Override
             public void onClick(View view) {
+                Log.v("TAG", "Persons: " + blockedPersons);
                 Intent intent = new Intent(getBaseContext(), ViewBlockedActivity.class);
+                intent.putExtra("blockedPersons", blockedPersons);
                 startActivity(intent);
             }
         });

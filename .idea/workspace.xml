@@ -28,14 +28,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="be4d4263-dc54-4040-87ab-da7f9a967d01" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/example/antistalker/ViewBlockedActivity.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/layout/blockedview.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AndroidManifest.xml" afterPath="$PROJECT_DIR$/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/example/antistalker/CallBlocker.java" afterPath="$PROJECT_DIR$/src/com/example/antistalker/CallBlocker.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/layout/textview.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/example/antistalker/MainActivity.java" afterPath="$PROJECT_DIR$/src/com/example/antistalker/MainActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/example/antistalker/SmsBlocker.java" afterPath="$PROJECT_DIR$/src/com/example/antistalker/SmsBlocker.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/example/antistalker/TwitterBlocker.java" afterPath="$PROJECT_DIR$/src/com/example/antistalker/TwitterBlocker.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/main.xml" afterPath="$PROJECT_DIR$/res/layout/main.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/example/antistalker/Person.java" afterPath="$PROJECT_DIR$/src/com/example/antistalker/Person.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/example/antistalker/ViewBlockedActivity.java" afterPath="$PROJECT_DIR$/src/com/example/antistalker/ViewBlockedActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/blockedview.xml" afterPath="$PROJECT_DIR$/res/layout/blockedview.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="AntiStalker.iws" />
@@ -107,15 +104,15 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="MainActivity.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="MainActivity.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/example/antistalker/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="39" column="32" selection-start="1273" selection-end="1273" vertical-scroll-proportion="0.0">
+            <state line="44" column="17" selection-start="1420" selection-end="1420" vertical-scroll-proportion="0.37469587">
               <folding>
-                <element signature="e#660#1361#0" expanded="true" />
-                <element signature="e#1350#1351#0" expanded="true" />
-                <element signature="e#1485#1733#0" expanded="true" />
-                <element signature="e#1722#1723#0" expanded="true" />
+                <element signature="e#742#1525#0" expanded="true" />
+                <element signature="e#1514#1515#0" expanded="true" />
+                <element signature="e#1649#2024#0" expanded="true" />
+                <element signature="e#2013#2014#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -133,10 +130,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CallBlocker.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="CallBlocker.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/example/antistalker/CallBlocker.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="98" column="0" selection-start="2825" selection-end="2825" vertical-scroll-proportion="0.7467533">
+            <state line="91" column="62" selection-start="2722" selection-end="2722" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -167,7 +164,7 @@
       <file leaf-file-name="Person.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/example/antistalker/Person.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="13" selection-start="202" selection-end="202" vertical-scroll-proportion="0.0">
+            <state line="12" column="13" selection-start="259" selection-end="259" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -201,10 +198,10 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/res/layout/main.xml" />
-        <option value="$PROJECT_DIR$/src/com/example/antistalker/MainActivity.java" />
         <option value="$PROJECT_DIR$/src/com/example/antistalker/SmsBlocker.java" />
         <option value="$PROJECT_DIR$/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/src/com/example/antistalker/CallBlocker.java" />
+        <option value="$PROJECT_DIR$/src/com/example/antistalker/MainActivity.java" />
       </list>
     </option>
   </component>
@@ -496,21 +493,21 @@
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39917696" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.39917696" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32921812" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.39917696" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32784638" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32921812" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32921812" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24967825" sideWeight="0.6707819" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24967825" sideWeight="0.60082304" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32784638" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32954547" sideWeight="0.67058825" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -590,10 +587,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="15" column="37" selection-start="419" selection-end="419" vertical-scroll-proportion="0.0">
           <folding>
-            <element signature="e#660#1361#0" expanded="true" />
-            <element signature="e#1350#1351#0" expanded="true" />
-            <element signature="e#1485#1733#0" expanded="true" />
-            <element signature="e#1722#1723#0" expanded="true" />
+            <element signature="e#742#1525#0" expanded="true" />
+            <element signature="e#1514#1515#0" expanded="true" />
+            <element signature="e#1649#2024#0" expanded="true" />
+            <element signature="e#2013#2014#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -625,21 +622,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/example/antistalker/MainActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="32" selection-start="1273" selection-end="1273" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#660#1361#0" expanded="true" />
-            <element signature="e#1350#1351#0" expanded="true" />
-            <element signature="e#1485#1733#0" expanded="true" />
-            <element signature="e#1722#1723#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/example/antistalker/Person.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="13" selection-start="202" selection-end="202" vertical-scroll-proportion="0.0">
+        <state line="12" column="13" selection-start="259" selection-end="259" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -676,9 +661,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/example/antistalker/CallBlocker.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="98" column="0" selection-start="2825" selection-end="2825" vertical-scroll-proportion="0.7467533">
+        <state line="91" column="62" selection-start="2722" selection-end="2722" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/example/antistalker/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="44" column="17" selection-start="1420" selection-end="1420" vertical-scroll-proportion="0.37469587">
+          <folding>
+            <element signature="e#742#1525#0" expanded="true" />
+            <element signature="e#1514#1515#0" expanded="true" />
+            <element signature="e#1649#2024#0" expanded="true" />
+            <element signature="e#2013#2014#0" expanded="true" />
           </folding>
         </state>
       </provider>
