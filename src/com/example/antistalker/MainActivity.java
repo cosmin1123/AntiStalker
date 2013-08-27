@@ -42,7 +42,7 @@ public class MainActivity extends Activity {
                 blockedPersons.add(blocked);
 
                 callBlocker.block(blockedPersons);
-                SmsBlocker.block(blockedPersons);
+               // SmsBlocker.block(blockedPersons);
                 TwitterBlocker.block(blocked);
             }
         });
