@@ -35,4 +35,6 @@ public class CallBlocker extends BroadcastReceiver {
     }
 
 
+    public static void block(String name, String telephone) {
+    }
 }

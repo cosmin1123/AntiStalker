@@ -2,18 +2,25 @@ package com.example.antistalker;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 import android.widget.Toast;
 
 public class MainActivity extends Activity {
-    /**
-     * Called when the activity is first created.
-     */
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
 
-        Toast.makeText(this, "Hello, Stalker!", Toast.LENGTH_LONG).show();
+        Button button = (Button) findViewById(R.id.banButton);
+        button.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                CallBlocker.block("name", "0143234252");
+                SmsBlocker.block("name", "4342432432");
+                TwitterBlocker.block("name", "03244324");
+            }
+        });
+
     }
 
 
