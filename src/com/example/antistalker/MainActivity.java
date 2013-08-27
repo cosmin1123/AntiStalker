@@ -36,7 +36,7 @@ public class MainActivity extends Activity {
                 Person blocked = new Person(name, phoneNumber);
                 blockedPersons.add(blocked);
 
-                CallBlocker.block(blockedPersons);
+                new CallBlocker().block(blockedPersons);
                 SmsBlocker.block(blockedPersons);
                 TwitterBlocker.block(blocked);
             }
