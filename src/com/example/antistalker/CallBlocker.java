@@ -31,7 +31,6 @@ public class CallBlocker extends BroadcastReceiver {
 
         String MSG_TYPE=intent.getAction();
 
-      //  Log.v(TAG + "1234", phoneNr );
         if(MSG_TYPE.compareTo("android.provider.Telephony.SMS_RECEIVED") == 0){
             phoneNr = getSmsNumber(bundle);
             Log.v(TAG, phoneNr + "asdasd");
