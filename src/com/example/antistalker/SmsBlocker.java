@@ -1,5 +1,7 @@
 package com.example.antistalker;
 
+import java.util.List;
+
 /**
  * Created with IntelliJ IDEA.
  * User: fanton
@@ -8,7 +10,7 @@ package com.example.antistalker;
  * To change this template use File | Settings | File Templates.
  */
 public class SmsBlocker {
-    public static void block(String name, String telephone) {
+    public static void block(List<Person> blockedPersons) {
         /**
          * TODO
          */

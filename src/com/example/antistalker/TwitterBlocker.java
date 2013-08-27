@@ -8,7 +8,7 @@ package com.example.antistalker;
  * To change this template use File | Settings | File Templates.
  */
 public class TwitterBlocker {
-    public static void block(String name, String telephone) {
+    public static void block(Person toBlock) {
         //To change body of created methods use File | Settings | File Templates.
     }
 }
