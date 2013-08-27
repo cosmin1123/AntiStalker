@@ -5,4 +5,20 @@
               android:layout_width="match_parent"
               android:layout_height="match_parent">
 
+    <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" android:layout_gravity="center">
+        <TextView
+                android:layout_width="104dp"
+                android:layout_height="50dp"
+                android:text="Blocked Users"
+                android:id="@+id/textView"
+                android:layout_alignParentLeft="true" android:layout_marginLeft="108dp"
+                android:layout_alignParentTop="true" android:layout_centerInParent="true"/>
+        <ListView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/listView"
+                android:layout_below="@+id/textView" android:layout_alignParentLeft="true"/>
+    </RelativeLayout>
 </LinearLayout>
