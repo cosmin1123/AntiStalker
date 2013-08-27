@@ -3,7 +3,10 @@ package com.example.antistalker;
 import java.lang.reflect.Method;
 import java.util.ArrayList;
 
+import android.media.AudioManager;
 import android.os.Bundle;
+import android.provider.MediaStore;
+import android.telephony.SmsMessage;
 import com.android.internal.telephony.ITelephony;
 
 import android.content.BroadcastReceiver;
@@ -19,25 +22,36 @@ public class CallBlocker extends BroadcastReceiver {
     private ITelephony telephonyService;
 
     ArrayList<Person> bannedPersons;
+    Integer currentRingMode;
 
     @Override
     public void onReceive(Context context, Intent intent) {
         Bundle bundle = intent.getExtras();
         String phoneNr = bundle.getString("incoming_number");
 
-        Log.v(TAG, "Receving from " + phoneNr);
+        String MSG_TYPE=intent.getAction();
+
+      //  Log.v(TAG + "1234", phoneNr );
+        if(MSG_TYPE.compareTo("android.provider.Telephony.SMS_RECEIVED") == 0){
+            phoneNr = getSmsNumber(bundle);
+            Log.v(TAG, phoneNr + "asdasd");
+        }
 
         if(!isBanned(phoneNr))
             return;
 
+        silencePhone();
+
+        abortBroadcast();
+
         TelephonyManager telephony = (TelephonyManager)
                 context.getSystemService(Context.TELEPHONY_SERVICE);
+
         try {
             Class c = Class.forName(telephony.getClass().getName());
             Method m = c.getDeclaredMethod("getITelephony");
             m.setAccessible(true);
             telephonyService = (ITelephony) m.invoke(telephony);
-            telephonyService.silenceRinger();
             telephonyService.endCall();
         } catch (Exception e) {
             e.printStackTrace();
@@ -45,24 +59,45 @@ public class CallBlocker extends BroadcastReceiver {
 
     }
 
-
-
     public void block(ArrayList<Person> bannedPersons) {
         this.bannedPersons = bannedPersons;
     }
 
-    public Boolean isBanned(String telephone){
-        Log.v(TAG, "Receving from " + bannedPersons);
+    public String getSmsNumber(Bundle bundle){
 
-        if("0751122566".compareTo(telephone) == 0)
+        Object messages[] = (Object[]) bundle.get("pdus");
+        SmsMessage smsMessage[] = new SmsMessage[messages.length];
+        for (int n = 0; n < messages.length; n++)
+        {
+            smsMessage[n] = SmsMessage.createFromPdu((byte[]) messages[n]);
+        }
+
+        return smsMessage[0].getDisplayOriginatingAddress();
+
+    }
+
+    public Boolean isBanned(String telephone) {
+        if (telephone != null)
+            Log.v(TAG, "asdsf" + telephone);
+        if (telephone == null) {
+            Log.v(TAG, "asfsdgsdgsdgsdgsdgsdgsdgsdgsd");
+            return false;
+        }
+
+        if(telephone.contains("0751122566")) {
             return  true;
+        }
 
         for(Person p : this.bannedPersons){
-            if(p.telephone.compareTo(telephone) == 0)
+            if(telephone.contains(p.telephone))
                 return  true;
         }
         return  false;
     }
 
+    public void silencePhone(){
+
+
+    }
 
 }
