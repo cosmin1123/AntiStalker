@@ -54,7 +54,7 @@ public class MainActivity extends Activity {
             @Override
             public void onClick(View view) {
                 Log.v("TAG", "Persons: " + blockedPersons);
-                Intent intent = new Intent(getBaseContext(), ViewBlockedActivity.class);
+                Intent intent = new Intent(getBaseContext(), TwitterActivity.class);
                 intent.putExtra("blockedPersons", blockedPersons);
                 startActivity(intent);
             }
