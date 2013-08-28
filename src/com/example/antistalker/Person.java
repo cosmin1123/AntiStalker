@@ -3,6 +3,8 @@ package com.example.antistalker;
 import android.os.Parcel;
 import android.os.Parcelable;
 
+import java.util.ArrayList;
+
 /**
  * Created with IntelliJ IDEA.
  * User: cosmin
@@ -33,6 +35,17 @@ public class Person implements Parcelable {
     public Person (Parcel source) {
         name = source.readString();
         telephone = source.readString();
+    }
+
+    public Boolean containedInArray(ArrayList<Person> blockedPersons){
+        for(Person p : blockedPersons)
+            if(this.isEqual(p))
+                return  true;
+        return false;
+    }
+
+    public Boolean isEqual(Person p){
+        return this.telephone.compareTo(p.telephone) == 0 && this.name.compareTo(p.name) == 0;
     }
 
     @Override

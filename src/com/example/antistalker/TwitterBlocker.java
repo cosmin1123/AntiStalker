@@ -1,5 +1,10 @@
 package com.example.antistalker;
 
+import android.util.Log;
+import twitter4j.Twitter;
+import twitter4j.TwitterException;
+import twitter4j.TwitterFactory;
+
 /**
  * Created with IntelliJ IDEA.
  * User: fanton
@@ -9,6 +14,7 @@ package com.example.antistalker;
  */
 public class TwitterBlocker {
     public static void block(Person toBlock) {
-        //To change body of created methods use File | Settings | File Templates.
+
+
     }
 }

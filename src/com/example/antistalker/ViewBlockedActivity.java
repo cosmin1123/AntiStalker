@@ -32,6 +32,7 @@ public class ViewBlockedActivity extends Activity {
         listView.setAdapter(adapter);
 
         listView.setClickable(true);
+
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener(){
             public void onItemClick(AdapterView<?> parent, View view, int position, long arg3) {
                 Log.v("MyLog", "DONE DONE Listneer Is set!!!");

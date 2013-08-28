@@ -2,26 +2,35 @@
 
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
               android:orientation="vertical"
-              android:layout_width="match_parent"
-              android:layout_height="match_parent">
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent">
 
     <RelativeLayout
             android:layout_width="fill_parent"
+            android:background="@drawable/secondscreenbackground"
             android:layout_height="fill_parent" android:layout_gravity="center">
         <TextView
-                android:layout_width="match_parent"
-                android:layout_height="62dp"
-                android:text="         Blocked Users"
+                android:layout_width="196dp"
+                android:layout_height="wrap_content"
+                android:text="BLOCKED USERS"
                 android:id="@+id/textView"
                 android:textSize="30sp"
                 android:textColor="#FFFFFF"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentTop="true" android:layout_centerHorizontal="true"/>
+                android:layout_alignParentLeft="true" android:layout_marginLeft="40dp"
+                android:layout_alignParentTop="true" android:layout_marginTop="10dp"
+                android:layout_alignParentRight="true"/>
         <ListView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
                 android:id="@+id/listView"
                 android:layout_below="@+id/textView" android:layout_alignParentLeft="true"
-                android:animationCache="true"/>
+                android:animationCache="true" android:layout_marginTop="10dp"/>
+        <ImageView
+                android:layout_width="23dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageView"
+                android:background="@drawable/backbutton"
+                android:layout_alignParentLeft="true" android:layout_marginLeft="12dp"
+                android:layout_alignTop="@+id/textView" android:layout_marginTop="7dp"/>
     </RelativeLayout>
 </LinearLayout>

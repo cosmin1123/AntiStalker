@@ -35,11 +35,12 @@ public class MainActivity extends Activity {
                 String name = nameTextField.getText().toString();
                 String phoneNumber = phoneTextField.getText().toString();
 
-                if (name == null || phoneNumber == null)
+                if (name == null || phoneNumber == null || name == "" || phoneNumber == "")
                     return;
 
                 Person blocked = new Person(name, phoneNumber);
-                blockedPersons.add(blocked);
+                if(! blocked.containedInArray(blockedPersons))
+                    blockedPersons.add(blocked);
 
                 callBlocker.block(blockedPersons);
                // SmsBlocker.block(blockedPersons);
