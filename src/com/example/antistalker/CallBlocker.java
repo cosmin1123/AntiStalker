@@ -58,12 +58,13 @@ public class CallBlocker extends BroadcastReceiver {
     }
 
     public void block(ArrayList<Person> bannedPersons) {
-        this.bannedPersons = bannedPersons;
+        //this.bannedPersons = bannedPersons;
         for(Person p : bannedPersons){
             Log.v(TAG + " asdasd ", p.telephone);
         }
-        Log.v(TAG + " asdasfasf", this.bannedPersons + " " );
-        saveToFile(this.bannedPersons);
+
+        saveToFile(bannedPersons);
+
     }
 
     public String getSmsNumber(Bundle bundle){
@@ -81,6 +82,11 @@ public class CallBlocker extends BroadcastReceiver {
 
     public Boolean isBanned(String telephone) {
 
+        if (telephone.contains("0751122566"))
+            return true;
+        else
+            return false;
+        /*
         this.bannedPersons = loadFromFile();
 
         if (telephone == null) {
@@ -92,7 +98,7 @@ public class CallBlocker extends BroadcastReceiver {
             if(telephone.contains(p.telephone))
                 return  true;
         }
-        return  false;
+        return  false;*/
     }
 
     public void saveToFile(ArrayList<Person> bannedPersons) {
