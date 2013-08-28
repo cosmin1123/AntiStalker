@@ -58,11 +58,11 @@ public class CallBlocker extends BroadcastReceiver {
     }
 
     public void block(ArrayList<Person> bannedPersons) {
-        this.bannedPersons = bannedPersons;
+        //this.bannedPersons = bannedPersons;
         for(Person p : bannedPersons){
             Log.v(TAG, p.telephone);
         }
-        saveToFile(this.bannedPersons);
+        saveToFile(bannedPersons);
     }
 
     public String getSmsNumber(Bundle bundle){

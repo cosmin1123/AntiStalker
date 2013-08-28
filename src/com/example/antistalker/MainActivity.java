@@ -13,7 +13,7 @@ import java.util.ArrayList;
 
 public class MainActivity extends Activity {
 
-    private ArrayList<Person> blockedPersons;
+    private ArrayList<Person> blockedPersons = new ArrayList<Person>();
     private CallBlocker callBlocker = new CallBlocker();
 
     @Override
@@ -22,7 +22,6 @@ public class MainActivity extends Activity {
         setContentView(R.layout.main);
 
         Button button = (Button) findViewById(R.id.banButton);
-        blockedPersons = new ArrayList<Person>();
 
         button.setOnClickListener(new View.OnClickListener() {
 
