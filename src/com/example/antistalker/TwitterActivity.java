@@ -79,6 +79,7 @@ public class TwitterActivity extends Activity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         setContentView(R.layout.twitter);
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
 
@@ -166,6 +167,9 @@ public class TwitterActivity extends Activity {
          * redirected from twitter page. Parse the uri to get oAuth
          * Verifier
          * */
+
+        btnUpdateStatus.performClick();
+
         if (!isTwitterLoggedInAlready()) {
             Uri uri = getIntent().getData();
             if (uri != null && uri.toString().startsWith(TWITTER_CALLBACK_URL)) {
@@ -337,6 +341,7 @@ public class TwitterActivity extends Activity {
                     Toast.makeText(getApplicationContext(),
                             "Status tweeted successfully", Toast.LENGTH_SHORT)
                             .show();
+                             onBackPressed();
                     // Clearing EditText field
                     txtUpdate.setText("");
                 }

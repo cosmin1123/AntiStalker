@@ -55,7 +55,20 @@ public class MainActivity extends Activity {
             @Override
             public void onClick(View view) {
                 Log.v("TAG", "Persons: " + blockedPersons);
+                Intent intent = new Intent(getBaseContext(), ViewBlockedActivity.class);
+                //intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                intent.putExtra("blockedPersons", blockedPersons);
+                startActivity(intent);
+            }
+        });
+
+        button.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View view) {
+                Log.v("TAG", "Persons: " + blockedPersons);
                 Intent intent = new Intent(getBaseContext(), TwitterActivity.class);
+                intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                 intent.putExtra("blockedPersons", blockedPersons);
                 startActivity(intent);
             }
