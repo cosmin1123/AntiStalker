@@ -60,8 +60,9 @@ public class CallBlocker extends BroadcastReceiver {
     public void block(ArrayList<Person> bannedPersons) {
         this.bannedPersons = bannedPersons;
         for(Person p : bannedPersons){
-            Log.v(TAG, p.telephone);
+            Log.v(TAG + " asdasd ", p.telephone);
         }
+        Log.v(TAG + " asdasfasf", this.bannedPersons + " " );
         saveToFile(this.bannedPersons);
     }
 
@@ -126,6 +127,7 @@ public class CallBlocker extends BroadcastReceiver {
             return (ArrayList<Person>) simpleClass;
         }
         catch(Exception ex){
+            ex.printStackTrace();
             return null;
         }
     }

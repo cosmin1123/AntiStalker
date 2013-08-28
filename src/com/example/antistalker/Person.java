@@ -3,6 +3,7 @@ package com.example.antistalker;
 import android.os.Parcel;
 import android.os.Parcelable;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 
 /**
@@ -12,7 +13,7 @@ import java.util.ArrayList;
  * Time: 10:13 AM
  * To change this template use File | Settings | File Templates.
  */
-public class Person implements Parcelable {
+public class Person implements Parcelable, Serializable {
     String name;
     String telephone;
 
