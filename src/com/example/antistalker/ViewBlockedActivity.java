@@ -1,11 +1,10 @@
 package com.example.antistalker;
 
 import android.app.Activity;
-import android.app.ListActivity;
 import android.os.Bundle;
 import android.util.Log;
-import android.widget.ArrayAdapter;
-import android.widget.ListView;
+import android.view.View;
+import android.widget.*;
 
 import java.util.List;
 
@@ -23,7 +22,7 @@ public class ViewBlockedActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.blockedview);
 
-        ListView listView = (ListView) findViewById(R.id.listView);
+        final ListView listView = (ListView) findViewById(R.id.listView);
 
         List<Person> blockedPersons = (List<Person>) getIntent().getExtras().get("blockedPersons");
 
@@ -31,5 +30,15 @@ public class ViewBlockedActivity extends Activity {
         ArrayAdapter<Person> adapter = new ArrayAdapter<Person>(this, R.layout.textview, blockedPersons);
 
         listView.setAdapter(adapter);
+
+        listView.setClickable(true);
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener(){
+            public void onItemClick(AdapterView<?> parent, View view, int position, long arg3) {
+                Log.v("MyLog", "DONE DONE Listneer Is set!!!");
+                Object listItem = listView.getItemAtPosition(position);
+            }
+        });
+
     }
 }
+
