@@ -13,7 +13,7 @@ import java.util.ArrayList;
 
 public class MainActivity extends Activity {
 
-    private ArrayList<Person> blockedPersons = new ArrayList<Person>();
+    private ArrayList<Person> blockedPersons;
     private CallBlocker callBlocker = new CallBlocker();
 
     @Override
@@ -22,6 +22,7 @@ public class MainActivity extends Activity {
         setContentView(R.layout.main);
 
         Button button = (Button) findViewById(R.id.banButton);
+        blockedPersons = new ArrayList<Person>();
 
         button.setOnClickListener(new View.OnClickListener() {
 
@@ -34,16 +35,20 @@ public class MainActivity extends Activity {
                 String name = nameTextField.getText().toString();
                 String phoneNumber = phoneTextField.getText().toString();
 
-                if (name == null || phoneNumber == null || name == "" || phoneNumber == "")
+                if (name == null || phoneNumber == null)
                     return;
 
                 Person blocked = new Person(name, phoneNumber);
-                if(! blocked.containedInArray(blockedPersons))
-                    blockedPersons.add(blocked);
+                blockedPersons.add(blocked);
 
                 callBlocker.block(blockedPersons);
-               // SmsBlocker.block(blockedPersons);
+                //SmsBlocker.block(blockedPersons);
                 TwitterBlocker.block(blocked);
+
+                Intent intent = new Intent(getBaseContext(), TwitterActivity.class);
+                intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                //intent.putExtra("blockedPersons", blockedPersons);
+                startActivity(intent);
             }
         });
 
@@ -55,12 +60,11 @@ public class MainActivity extends Activity {
             public void onClick(View view) {
                 Log.v("TAG", "Persons: " + blockedPersons);
                 Intent intent = new Intent(getBaseContext(), ViewBlockedActivity.class);
-                //intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                 intent.putExtra("blockedPersons", blockedPersons);
                 startActivity(intent);
             }
         });
-
+          /*
         button.setOnClickListener(new View.OnClickListener() {
 
             @Override
@@ -68,10 +72,10 @@ public class MainActivity extends Activity {
                 Log.v("TAG", "Persons: " + blockedPersons);
                 Intent intent = new Intent(getBaseContext(), TwitterActivity.class);
                 intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-                intent.putExtra("blockedPersons", blockedPersons);
+                //intent.putExtra("blockedPersons", blockedPersons);
                 startActivity(intent);
             }
-        });
+        });   */
     }
 
 
