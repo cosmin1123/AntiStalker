@@ -26,16 +26,18 @@
   <component name="ChangeListManager">
     <list default="true" id="be4d4263-dc54-4040-87ab-da7f9a967d01" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AntiStalker.iml" afterPath="$PROJECT_DIR$/AntiStalker.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/example/antistalker/CallBlocker.java" afterPath="$PROJECT_DIR$/src/com/example/antistalker/CallBlocker.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/example/antistalker/ViewBlockedActivity.java" afterPath="$PROJECT_DIR$/src/com/example/antistalker/ViewBlockedActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project.properties" afterPath="$PROJECT_DIR$/project.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/twitter.xml" afterPath="$PROJECT_DIR$/res/layout/twitter.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="AntiStalker.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Dummy.txt" changelist="be4d4263-dc54-4040-87ab-da7f9a967d01" time="1377672943141" ignored="false" />
-    <file path="/MainActivity.java" changelist="be4d4263-dc54-4040-87ab-da7f9a967d01" time="1377602122294" ignored="false" />
+    <file path="/MainActivity.java" changelist="be4d4263-dc54-4040-87ab-da7f9a967d01" time="1377674862248" ignored="false" />
     <file path="/main.xml" changelist="be4d4263-dc54-4040-87ab-da7f9a967d01" time="1377588845337" ignored="false" />
-    <file path="/fragment.java" changelist="be4d4263-dc54-4040-87ab-da7f9a967d01" time="1377673021100" ignored="false" />
+    <file path="/fragment.java" changelist="be4d4263-dc54-4040-87ab-da7f9a967d01" time="1377674249402" ignored="false" />
     <file path="/AndroidManifest.xml" changelist="be4d4263-dc54-4040-87ab-da7f9a967d01" time="1377605757425" ignored="false" />
     <file path="/CallBlocker.java" changelist="be4d4263-dc54-4040-87ab-da7f9a967d01" time="1377614244885" ignored="false" />
     <file path="/SmsBlocker.java" changelist="be4d4263-dc54-4040-87ab-da7f9a967d01" time="1377603263486" ignored="false" />
@@ -43,6 +45,7 @@
     <file path="$PROJECT_DIR$/gen/com/example/antistalker/BuildConfig.java" changelist="be4d4263-dc54-4040-87ab-da7f9a967d01" time="1377613751370" ignored="false" />
     <file path="$PROJECT_DIR$/gen/com/android/internal/telephony/ITelephony.java" changelist="be4d4263-dc54-4040-87ab-da7f9a967d01" time="1377613751370" ignored="false" />
     <file path="/ViewBlockedActivity.java" changelist="be4d4263-dc54-4040-87ab-da7f9a967d01" time="1377673151534" ignored="false" />
+    <file path="/twitter.xml" changelist="be4d4263-dc54-4040-87ab-da7f9a967d01" time="1377674596159" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -106,19 +109,7 @@
       <file leaf-file-name="MainActivity.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/example/antistalker/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="50" column="38" selection-start="1498" selection-end="1607" vertical-scroll-proportion="0.9318182">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="blockedview.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/res/layout/blockedview.xml">
-          <provider selected="true" editor-type-id="android-designer">
-            <state />
-          </provider>
-          <provider editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+            <state line="56" column="82" selection-start="1888" selection-end="1888" vertical-scroll-proportion="0.72540045">
               <folding />
             </state>
           </provider>
@@ -136,7 +127,7 @@
       <file leaf-file-name="ViewBlockedActivity.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/example/antistalker/ViewBlockedActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="32" column="34" selection-start="970" selection-end="970" vertical-scroll-proportion="0.0">
+            <state line="25" column="8" selection-start="631" selection-end="631" vertical-scroll-proportion="-6.28">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -147,7 +138,7 @@
       <file leaf-file-name="CallBlocker.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/example/antistalker/CallBlocker.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="92" column="58" selection-start="2692" selection-end="2692" vertical-scroll-proportion="0.0">
+            <state line="90" column="58" selection-start="2628" selection-end="2628" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -180,15 +171,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AndroidManifest.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="81" selection-start="971" selection-end="971" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FindManager">
@@ -211,6 +193,7 @@
         <option value="$PROJECT_DIR$/src/com/example/antistalker/SmsBlocker.java" />
         <option value="$PROJECT_DIR$/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/src/com/example/antistalker/CallBlocker.java" />
+        <option value="$PROJECT_DIR$/res/layout/twitter.xml" />
         <option value="$PROJECT_DIR$/src/com/example/antistalker/ViewBlockedActivity.java" />
         <option value="$PROJECT_DIR$/src/com/example/antistalker/MainActivity.java" />
       </list>
@@ -354,7 +337,8 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="SHOW_ALL_PROCESSES" value="false" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="GoToFile.includeJavaFiles" value="false" />
     <property name="OverrideImplement.combined" value="true" />
     <property name="project.structure.proportion" value="0.15" />
@@ -365,7 +349,9 @@
     <property name="last_opened_file_path" value="$USER_HOME$/Downloads/twitter/lib/twitter4j-core-3.0.3.jar!/" />
     <property name="AndroidLayoutSelectedEditor" value="android-designer" />
     <property name="project.structure.side.proportion" value="0.2" />
+    <property name="DEBUGGABLE_DEVICE" value="emulator-5554 (Test)" />
     <property name="MemberChooser.copyJavadoc" value="false" />
+    <property name="DEBUGGABLE_PROCESS" value="com.example.antistalker" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="restartRequiresConfirmation" value="true" />
@@ -539,33 +525,33 @@
     <frame x="-3" y="0" width="1606" height="877" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32947233" sideWeight="0.6021948" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32947233" sideWeight="0.6021948" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329375" sideWeight="0.61538464" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329375" sideWeight="0.61538464" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32968536" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32954547" sideWeight="0.67058825" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3978052" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3846154" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3978052" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32784638" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3275862" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32921812" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32921812" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24967825" sideWeight="0.6707819" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32784638" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2425" sideWeight="0.61538464" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3275862" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32954547" sideWeight="0.67058825" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
@@ -635,13 +621,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/example/antistalker/Person.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="13" selection-start="259" selection-end="259" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="22" column="81" selection-start="971" selection-end="971" vertical-scroll-proportion="0.0">
@@ -692,7 +671,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="81" selection-start="971" selection-end="971" vertical-scroll-proportion="0.0">
+        <state line="38" column="81" selection-start="1512" selection-end="1512" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -706,17 +685,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/example/antistalker/CallBlocker.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="92" column="58" selection-start="2692" selection-end="2692" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/blockedview.xml">
-      <provider selected="true" editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="90" column="58" selection-start="2628" selection-end="2628" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -738,9 +707,29 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/twitter.xml">
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="12.6">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/blockedview.xml">
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/example/antistalker/ViewBlockedActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="34" selection-start="970" selection-end="970" vertical-scroll-proportion="0.0">
+        <state line="25" column="8" selection-start="631" selection-end="631" vertical-scroll-proportion="-6.28">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -749,7 +738,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/example/antistalker/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="50" column="38" selection-start="1498" selection-end="1607" vertical-scroll-proportion="0.9318182">
+        <state line="56" column="82" selection-start="1888" selection-end="1888" vertical-scroll-proportion="0.72540045">
           <folding />
         </state>
       </provider>
@@ -794,7 +783,7 @@
       </state>
       <state key="JdkListConfigurable.UI">
         <settings>
-          <last-edited>1.7</last-edited>
+          <last-edited>Android 2.2 Platform</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

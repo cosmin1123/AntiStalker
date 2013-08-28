@@ -30,6 +30,7 @@ public class ViewBlockedActivity extends Activity {
         ArrayAdapter<Person> adapter = new ArrayAdapter<Person>(this, R.layout.textview, blockedPersons);
 
         listView.setAdapter(adapter);
+
         listView.setClickable(true);
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener(){
             public void onItemClick(AdapterView<?> parent, View view, int position, long arg3) {

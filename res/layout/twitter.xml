@@ -18,47 +18,46 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Login"
-            android:layout_alignParentLeft="true" android:layout_marginLeft="23dp"
-            android:layout_above="@+id/btnUpdateStatus"/>
+            android:layout_alignParentLeft="true" android:layout_alignParentTop="true"/>
 
         <Button
                 android:id="@+id/btnUpdateStatus"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="UpdateStatus"
-                android:layout_alignParentLeft="true" android:layout_marginLeft="91dp"
-                android:layout_alignTop="@+id/txtUpdateStatus"/>
+                android:layout_alignLeft="@+id/tweetButton" android:layout_alignParentTop="true"
+                android:layout_marginTop="134dp"/>
 
         <Button
                 android:id="@+id/btnLogoutTwitter"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Logout"
-                android:layout_alignLeft="@+id/btnUpdateStatus" android:layout_alignParentTop="true"
-                android:layout_marginTop="13dp"/>
+                android:layout_alignParentRight="true" android:layout_alignTop="@+id/btnLoginTwitter"/>
 
         <EditText
                 android:id="@+id/txtUpdateStatus"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="TextUpdateStatus"
-                android:layout_alignLeft="@+id/tweetButton" android:layout_alignParentTop="true"
-                android:layout_marginTop="71dp"/>
+                android:layout_toLeftOf="@+id/btnLogoutTwitter" android:layout_alignParentTop="true"
+                android:layout_marginTop="84dp"/>
 
         <TextView
                 android:id="@+id/lblUpdate"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="lblUpdate"
-                android:layout_alignParentLeft="true" android:layout_marginLeft="27dp"
-                android:layout_below="@+id/lblUserName"/>
+                android:layout_alignParentLeft="true" android:layout_marginLeft="6dp"
+                android:layout_alignParentTop="true" android:layout_marginTop="177dp"/>
 
         <TextView
                 android:id="@+id/lblUserName"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Username"
-                android:layout_alignLeft="@+id/tweetButton" android:layout_below="@+id/btnLoginTwitter"/>
+                android:layout_toRightOf="@+id/btnUpdateStatus" android:layout_alignParentTop="true"
+                android:layout_marginTop="174dp"/>
 
     </RelativeLayout>
 </LinearLayout>
