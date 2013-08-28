@@ -1,5 +1,6 @@
 package com.example.antistalker;
 
+import java.io.*;
 import java.lang.reflect.Method;
 import java.util.ArrayList;
 
@@ -39,8 +40,6 @@ public class CallBlocker extends BroadcastReceiver {
         if(!isBanned(phoneNr))
             return;
 
-        silencePhone();
-
         abortBroadcast();
 
         TelephonyManager telephony = (TelephonyManager)
@@ -63,6 +62,7 @@ public class CallBlocker extends BroadcastReceiver {
         for(Person p : bannedPersons){
             Log.v(TAG, p.telephone);
         }
+        saveToFile(this.bannedPersons);
     }
 
     public String getSmsNumber(Bundle bundle){
@@ -80,6 +80,8 @@ public class CallBlocker extends BroadcastReceiver {
 
     public Boolean isBanned(String telephone) {
 
+        this.bannedPersons = loadFromFile();
+
         if (telephone == null) {
             return false;
         }
@@ -92,9 +94,40 @@ public class CallBlocker extends BroadcastReceiver {
         return  false;
     }
 
-    public void silencePhone(){
+    public void saveToFile(ArrayList<Person> bannedPersons) {
+        try{
+            File file = new File("data/data/com.example.antistalker/banned");
+            if (!file.exists()) {
+                try {
+                    file.createNewFile();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+            FileOutputStream fos = new FileOutputStream(file);
+            ObjectOutputStream os = new ObjectOutputStream(fos);
+            os.writeObject(bannedPersons);
+            os.close();
+        }
+        catch(IOException ex){
 
+        }
+    }
 
+    public ArrayList<Person> loadFromFile() {
+
+        try{
+            File file = new File("data/data/com.example.antistalker/banned");
+            FileInputStream fis = new FileInputStream(file);
+            ObjectInputStream is = new ObjectInputStream(fis);
+            Object simpleClass =  is.readObject();
+            is.close();
+
+            return (ArrayList<Person>) simpleClass;
+        }
+        catch(Exception ex){
+            return null;
+        }
     }
 
 }
