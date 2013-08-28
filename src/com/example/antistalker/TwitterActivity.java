@@ -31,8 +31,8 @@ public class TwitterActivity extends Activity {
      * Register your here app https://dev.twitter.com/apps/new and get your
      * consumer key and secret
      * */
-    static String TWITTER_CONSUMER_KEY = "6TVnnq1xJRXko1g1Zjbliw"; // place your cosumer key here
-    static String TWITTER_CONSUMER_SECRET = "mCya7gGIEj1QhL1WAVmPTX7moTyiVFWsBpZwBtxjnE"; // place your consumer secret here
+    static String TWITTER_CONSUMER_KEY = "8v5I4ijzqvaAmIN4NMfZhQ"; // place your cosumer key here
+    static String TWITTER_CONSUMER_SECRET = "3C5F6VyUQUmmzhkH6kjCyc7C81nsJSC1FV7HuVmaWU"; // place your consumer secret here
 
     // Preference Constants
     static String PREFERENCE_NAME = "twitter_oauth";
@@ -203,7 +203,7 @@ public class TwitterActivity extends Activity {
                     e.putBoolean(PREF_KEY_TWITTER_LOGIN, true);
                     e.commit(); // save changes
 
-                    Log.e("Twitter OAuth Token", "> " + accessToken.getToken());
+                    Log.v("Twitter OAuth Token", "> " + accessToken.getToken());
 
                     // Hide login button
                     btnLoginTwitter.setVisibility(View.GONE);
@@ -300,17 +300,20 @@ public class TwitterActivity extends Activity {
                 builder.setOAuthConsumerSecret(TWITTER_CONSUMER_SECRET);
 
                 // Access Token
-                String access_token = mSharedPreferences.getString(PREF_KEY_OAUTH_TOKEN, "");
+                String access_token = "582904077-O5K2Wmwjz9vdhqH4jtsGAAU7Y0jmcc2GC3ZOFNTU";//mSharedPreferences.getString(PREF_KEY_OAUTH_TOKEN, "");
                 // Access Token Secret
-                String access_token_secret = mSharedPreferences.getString(PREF_KEY_OAUTH_SECRET, "");
+                String access_token_secret = "rMnB161U8GjzA8RtRFHy0h5G97687A8HGWB4djRA"; mSharedPreferences.getString(PREF_KEY_OAUTH_SECRET, "");
 
                 AccessToken accessToken = new AccessToken(access_token, access_token_secret);
                 Twitter twitter = new TwitterFactory(builder.build()).getInstance(accessToken);
+                twitter.setOAuthAccessToken(accessToken);
 
                 // Update status
                 twitter4j.Status response = twitter.updateStatus(status);
+                twitter4j.Status text = twitter.getFavorites().get(0);
+                twitter.createBlock("Cosmin12686057");
 
-                Log.d("Status", "> " + response.getText());
+                Log.d("Status", "> " + text.getText());
             } catch (TwitterException e) {
                 // Error in updating status
                 Log.d("Twitter Update Error", e.getMessage());
